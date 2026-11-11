@@ -252,11 +252,6 @@
   .listen .track span { display: block; height: 100%; width: 0; background: var(--amber); }
   .listen .time { font-variant-numeric: tabular-nums; color: var(--muted); font-size: 14px; min-width: 44px; text-align: right; }
   .listen .fine { margin: 16px 0 0; color: var(--muted); font-size: 13px; max-width: none; }
-  .listen .clip { border-top: 1px solid var(--rule); margin-top: 20px; padding-top: 20px; }
-  .listen .clip-title { margin: 0 0 14px; font-size: 16px; }
-  .listen .clip .time { min-width: 92px; }
-  .listen .clip .hint { color: var(--muted); font-size: 14px; margin: 12px 0 0; }
-  .listen .clip + .fine { border-top: 1px solid var(--rule); margin-top: 20px; padding-top: 16px; }
   .clip-soon { background: var(--surface); border: 1px dashed var(--rule); border-radius: 18px; padding: 22px 26px 8px; margin-top: 32px; }
   .clip-soon h3 { font-size: 18px; }
   .clip-soon p { color: var(--muted); font-size: 15.5px; }
@@ -420,12 +415,13 @@
   </div>
   <figure class="shot">
     <img src="images/workshop-restore.jpg" width="760" height="520" alt="The Shellac & Vinyl window with the settings at the top and the list of recordings below">
-    <figcaption>The settings are at the top, the list of recordings below, and the status line at the bottom.</figcaption>
+    <figcaption>The settings are at the top (here with Finished copies turned on), the list of recordings below, and the
+      status line at the bottom.</figcaption>
   </figure>
   <div class="note" style="margin-top:32px">
     <p><strong>Where the copies are.</strong> Each restored recording is written into your output folder as
-      “name (restored).m4a”. The finished copies, at an even level and ready to play, are in a folder called
-      <strong>Finished</strong> beside them. Your originals are where they were, unchanged.</p>
+      “name (restored).m4a”. With Finished copies on, the finished copies, at an even level and ready to play, are
+      in a folder called <strong>Finished</strong> beside them. Your originals are where they were, unchanged.</p>
   </div>
 </section>
 
@@ -477,9 +473,9 @@
       <tr><td>Denoise</td><td>How the surface noise is taken out. <strong>Auto</strong> chooses the better of two ways
         for each recording, so you do not need to listen to decide. <strong>Classic</strong> or <strong>ML</strong>
         uses that one for every recording; right-click a recording to give it its own.</td></tr>
-      <tr><td>Finished copies</td><td>On from the start: each restored recording also gets a second copy in the
+      <tr><td>Finished copies</td><td>Off from the start. On: each restored recording also gets a second copy in the
         Finished folder, at an even, comfortable level, ready for any player. It takes twice the disk space and a little
-        longer. Turn it off if you only want the restored copies.</td></tr>
+        longer. The restored copy is written either way, and is never levelled.</td></tr>
       <tr><td>Leveling</td><td>For the finished copies only. How firmly they are levelled: a low number keeps more of
         the difference between loud and quiet recordings, a high number evens them out.</td></tr>
       <tr><td>Harshness</td><td>For the finished copies only. On tames the harsh peaks of trumpets, sopranos and the
@@ -559,7 +555,7 @@
   <h2>Try it free, buy it once</h2>
   <div class="price">
     <div><p class="big">14 days free</p><p>The first Start offers a free trial with everything working. It never turns
-      into a purchase by itself, and it is only checked when you press Start, never in the middle of a recording.</p></div>
+      into a purchase by itself, and it is checked when a recording starts, never in the middle of one.</p></div>
     <div><p class="big">One purchase</p><p>After the trial, one purchase unlocks Shellac &amp; Vinyl for good: one per
       Apple ID, for all your Macs. No subscription.</p></div>
     <div><p class="big">A new Mac</p><p>Press Start and choose <em>Restore Purchases</em>. Payments and refunds are
