@@ -439,16 +439,30 @@
       <tr><td><span class="mark" style="background:#ff9f0a"></span>Restored: listen before you play it</td>
         <td>The copy is written, but something should be heard first. The row says what, for example that the quietest
           part kept more of the surface than planned.</td>
-        <td>Listen to the part it names. Keep the original if you prefer it.</td></tr>
+        <td>Press the row's play key: it starts at the part it names. Switch between Before and After, and keep the
+          original if you prefer it.</td></tr>
       <tr><td><span class="mark" style="background:#8e8e93"></span>Left as it is</td>
         <td>Even the gentlest treatment would harm the music, so nothing is written.</td>
         <td>Nothing. The recording is better left as it is.</td></tr>
     </table>
   </div>
+  <div class="card" style="margin-top:28px">
+    <h3>Hearing before and after</h3>
+    <p>A restored recording has a <strong>play key</strong> at the right of its row. Press it and the restored copy
+      plays on your Mac, with a bar under the row: <strong>Before</strong> is the original, <strong>After</strong> the
+      restored copy, and <strong>Finished</strong> is there when a finished copy was written. Switching keeps the place,
+      so you hear the same bar of music both ways, and Before plays at the copy's loudness, so the difference is what
+      was taken out. A recording with an amber mark starts just before the part its reason is about; a green one where
+      the music starts. Click the line to hear another place. Space pauses, Esc stops, and the list goes on restoring
+      while you listen.</p>
+  </div>
+  <figure class="shot">
+    <img src="images/workshop-listen-restore.jpg" width="760" height="520" loading="lazy" alt="One recording playing, with Before, After and Finished under its row">
+  </figure>
   <div class="grid g2" style="margin-top:28px">
     <div class="card"><h3>Taking recordings off the list</h3><p>Right-click a recording for <strong>Remove from the
       List</strong>, or <strong>Remove All from This Folder</strong> for a folder added by mistake. <strong>Clear
-      Finished</strong> takes off the ones that are done, and <strong>Remove All…</strong> empties the list. Files
+      Done</strong> takes off the ones that are done, and <strong>Remove All…</strong> empties the list. Files
       already written stay where they are.</p></div>
     <div class="card"><h3>After you quit, or after a crash</h3><p>Closing the window quits the app. The list is saved
       as it goes: open the app again and it carries on. A recording that was in the middle starts again from its
@@ -467,7 +481,7 @@
       <tr><th>Setting</th><th>What it does</th></tr>
       <tr><td>Restored files go to</td><td>The folder the restored copies are written into. Choose one of your music
         folders if you want to see them in your music app at once.</td></tr>
-      <tr><td>Silence at the ends</td><td>How much of the quiet groove before and after the music each copy keeps:
+      <tr><td>Silence kept at the ends</td><td>How much of the quiet groove before and after the music each copy keeps:
         half a second unless you change it, from None to 5 seconds, or All for the recording's whole length. The music
         itself is never cut.</td></tr>
       <tr><td>Denoise</td><td>How the surface noise is taken out. <strong>Auto</strong> chooses the better of two ways
@@ -478,7 +492,7 @@
         longer. The restored copy is written either way, and is never leveled.</td></tr>
       <tr><td>Leveling</td><td>For the finished copies only. How firmly they are leveled: a low number keeps more of
         the difference between loud and quiet recordings, a high number evens them out.</td></tr>
-      <tr><td>Harshness</td><td>For the finished copies only. On tames the harsh peaks of trumpets, sopranos and the
+      <tr><td>Tame harshness</td><td>For the finished copies only. On tames the harsh peaks of trumpets, sopranos and the
         top of an old disc.</td></tr>
       <tr><td>Turbo</td><td>Restores several recordings at once, for a long list when you are not using the Mac for
         anything else. The fan may run, and music playing in another app may stutter. It is off again the next time
@@ -494,8 +508,9 @@
   <div class="faq" style="margin-top:26px">
     <details>
       <summary>A recording got an amber mark. What now?</summary>
-      <div><p>The copy is written and may be fine. The row says what to listen for. Play that part of the copy and of
-        the original in your music app, and keep the one you prefer. Nothing is lost either way.</p></div>
+      <div><p>The copy is written and may be fine. The row says what to listen for. Press its play key: it starts at that
+        part, and Before and After switch between the original and the copy at the same place. Keep the one you
+        prefer. Nothing is lost either way.</p></div>
     </details>
     <details>
       <summary>A recording was left as it is</summary>
@@ -506,7 +521,7 @@
     </details>
     <details>
       <summary>A restored copy is shorter than the original</summary>
-      <div><p>Silence at the ends trims the quiet groove before and after the music. The music itself is never cut. Set
+      <div><p>Silence kept at the ends trims the quiet groove before and after the music. The music itself is never cut. Set
         it to <strong>All</strong> to keep the recording's whole length.</p></div>
     </details>
     <details>
@@ -545,6 +560,8 @@
     <table>
       <tr><th>Keys</th><th>Action</th></tr>
       <tr><td>⌘O</td><td>Add Files…</td></tr>
+      <tr><td>Space</td><td>Pause and go on, while a recording plays</td></tr>
+      <tr><td>Esc</td><td>Stop the recording that plays</td></tr>
       <tr><td>⌘?</td><td>The manual</td></tr>
       <tr><td>⌘Q</td><td>Quit</td></tr>
     </table>
