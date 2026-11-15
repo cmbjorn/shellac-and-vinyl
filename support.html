@@ -302,6 +302,8 @@
   .prose h2 { font: 600 21px/1.3 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; margin: 32px 0 8px; }
   .prose .summary { background: var(--surface); border: 1px solid var(--rule); border-radius: 16px; padding: 20px 22px 8px; box-shadow: var(--shadow); margin: 0 0 8px; }
   .prose code { font-size: 13.5px; overflow-wrap: anywhere; }
+  pre { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 12px 14px; margin: 12px 0; overflow-x: auto; }
+  code { font-size: 13.5px; overflow-wrap: anywhere; }
   .prose li { margin-bottom: 6px; }
 
   /* Closing */
@@ -369,7 +371,7 @@
     <nav>
       <a href="#start">Getting started</a>
       <a href="#list">The list</a>
-      <a href="#settings">Settings</a>
+      <a href="#settings">Settings</a>      <a href="#linux">Linux</a>
       <a href="#questions">Questions</a>
       <a href="#purchases">Purchases</a>
       <a href="#contact">Contact</a>
@@ -380,17 +382,16 @@
 <div class="hero small">
   <div class="wrap">
     <p class="eyebrow">Support and guide</p>
-    <h1>Clean copies of your worn records</h1>
-    <p class="sub">Shellac &amp; Vinyl takes the clicks, crackle and hiss out of recordings you already have, and writes
-      each one as a new file. This page shows how to start, what the marks on the list mean and what each setting does.</p>
+    <h1>Restoring your worn records</h1>
+    <p class="sub">Shellac &amp; Vinyl reduces the clicks, crackle and hiss in recordings you already have, and writes each one as a new file. This page shows how to start, what the marks on the list mean and what each setting does.</p>
     <div class="buttons">
       <a class="btn primary" href="mailto:christianmb@gmail.com?subject=Shellac%20%26%20Vinyl">Email support</a>
       <a class="btn ghost" href="#start">Getting started</a>
       <a class="btn ghost" href="#questions">Questions</a>
     </div>
     <ul class="facts">
-      <li>Mac with Apple silicon</li>
-      <li>macOS 14.2 or later</li>
+      <li>Mac and Linux</li>
+      <li>Your own files</li>
       <li>No subscription</li>
       <li>Nothing uploaded</li>
     </ul>
@@ -403,12 +404,12 @@
 <section id="start">
   <p class="kicker">Getting started</p>
   <h2>Three steps, then leave it to run</h2>
-  <p class="intro">You need your recordings as files on the Mac. Shellac &amp; Vinyl does not record from a turntable,
-    and macOS asks for no permission when you open it.</p>
+  <p class="intro">You need your recordings as files on your computer. Shellac &amp; Vinyl does not record from a turntable, and it
+    asks for no permissions when you open it.</p>
   <div class="grid g3 steps3">
     <div class="card"><h3>Choose the output folder</h3><p>Press the folder button at the top of the window and choose
       where the restored copies should go. Do this before you press Start.</p></div>
-    <div class="card"><h3>Add your recordings</h3><p>Press <strong>Add Files…</strong> (⌘O) and select files or whole
+    <div class="card"><h3>Add your recordings</h3><p>Press <strong>Add Files…</strong> (⌘O on the Mac) and select files or whole
       folders, or drop them on the window. A folder brings every recording inside it, subfolders included.</p></div>
     <div class="card"><h3>Press Start</h3><p>The recordings are restored one after the other. You can add more while
       it works. The line at the bottom says what is happening and about how long is left.</p></div>
@@ -420,8 +421,9 @@
   </figure>
   <div class="note" style="margin-top:32px">
     <p><strong>Where the copies are.</strong> Each restored recording is written into your output folder as
-      “name (restored).m4a”. With Finished copies on, the finished copies, at an even level and ready to play, are
-      in a folder called <strong>Finished</strong> beside them. Your originals are where they were, unchanged.</p>
+      “name (restored)”, an .m4a file on the Mac and a .flac or .mp3 file on Linux. The silence or empty groove before
+      and after the music is trimmed automatically, to half a second unless you change <strong>Silence kept at the
+      ends</strong>. With Finished copies on, the finished copies, at an even level, are in a folder called <strong>Finished</strong> beside them. Your originals are where they were, unchanged.</p>
   </div>
 </section>
 
@@ -438,7 +440,7 @@
         <td>The copy is written.</td><td>Nothing. Play it.</td></tr>
       <tr><td><span class="mark" style="background:#ff9f0a"></span>Restored: listen before you play it</td>
         <td>The copy is written, but something should be heard first. The row says what, for example that the quietest
-          part kept more of the surface than planned.</td>
+          part kept more surface noise than intended.</td>
         <td>Press the row's play key: it starts at the part it names. Switch between Before and After, and keep the
           original if you prefer it.</td></tr>
       <tr><td><span class="mark" style="background:#8e8e93"></span>Left as it is</td>
@@ -449,23 +451,21 @@
   <div class="card" style="margin-top:28px">
     <h3>Hearing before and after</h3>
     <p>A restored recording has a <strong>play key</strong> at the right of its row. Press it and the restored copy
-      plays on your Mac, with a bar under the row: <strong>Before</strong> is the original, <strong>After</strong> the
+      plays on your computer, with a bar under the row: <strong>Before</strong> is the original, <strong>After</strong> the
       restored copy, and <strong>Finished</strong> is there when a finished copy was written. Switching keeps the place,
-      so you hear the same bar of music both ways, and Before plays at the copy's loudness, so the difference is what
-      was taken out. A recording with an amber mark starts just before the part its reason is about; a green one where
-      the music starts. Click the line to hear another place. Space pauses, Esc stops, and the list goes on restoring
-      while you listen.</p>
+      so you hear the same bar of music both ways, and Before plays at the copy's loudness, so the difference you hear is what was removed. A recording with an amber mark starts just before the part its reason is about; a green one where
+      the music starts. Click the line to hear another place. Space pauses, Esc stops, and the list continues restoring while you listen.</p>
   </div>
   <figure class="shot">
     <img src="images/workshop-listen-restore.jpg" width="760" height="520" loading="lazy" alt="One recording playing, with Before, After and Finished under its row">
   </figure>
   <div class="grid g2" style="margin-top:28px">
-    <div class="card"><h3>Taking recordings off the list</h3><p>Right-click a recording for <strong>Remove from the
+    <div class="card"><h3>Removing recordings from the list</h3><p>Right-click a recording for <strong>Remove from the
       List</strong>, or <strong>Remove All from This Folder</strong> for a folder added by mistake. <strong>Clear
-      Done</strong> takes off the ones that are done, and <strong>Remove All…</strong> empties the list. Files
+      Done</strong> removes the ones that are done, and <strong>Remove All…</strong> empties the list. Files
       already written stay where they are.</p></div>
     <div class="card"><h3>After you quit, or after a crash</h3><p>Closing the window quits the app. The list is saved
-      as it goes: open the app again and it carries on. A recording that was in the middle starts again from its
+      as it goes: open the app again and it continues. A recording that was in the middle starts again from its
       beginning; the finished ones stay finished.</p></div>
   </div>
 </section>
@@ -481,23 +481,56 @@
       <tr><th>Setting</th><th>What it does</th></tr>
       <tr><td>Restored files go to</td><td>The folder the restored copies are written into. Choose one of your music
         folders if you want to see them in your music app at once.</td></tr>
-      <tr><td>Silence kept at the ends</td><td>How much of the quiet groove before and after the music each copy keeps:
-        half a second unless you change it, from None to 5 seconds, or All for the recording's whole length. The music
+      <tr><td>Silence kept at the ends</td><td>The silence or empty groove before and after the music is trimmed automatically.
+        This sets how much each copy keeps: half a second unless you change it, from None to 5 seconds, or All for the recording's whole length. The music
         itself is never cut.</td></tr>
-      <tr><td>Denoise</td><td>How the surface noise is taken out. <strong>Auto</strong> chooses the better of two ways
+      <tr><td>Denoise</td><td>How the surface noise is reduced. <strong>Auto</strong> chooses the better of two ways
         for each recording, so you do not need to listen to decide. <strong>Classic</strong> or <strong>Model</strong>
         uses that one for every recording; right-click a recording to give it its own.</td></tr>
       <tr><td>Finished copies</td><td>Off from the start. On: each restored recording also gets a second copy in the
-        Finished folder, at an even, comfortable level, ready for any player. It takes twice the disk space and a little
+        Finished folder, at an even, comfortable level. It takes twice the disk space and a little
         longer. The restored copy is written either way, and is never leveled.</td></tr>
       <tr><td>Leveling</td><td>For the finished copies only. How firmly they are leveled: a low number keeps more of
         the difference between loud and quiet recordings, a high number evens them out.</td></tr>
-      <tr><td>Tame harshness</td><td>For the finished copies only. On tames the harsh peaks of trumpets, sopranos and the
+      <tr><td>Tame harshness</td><td>For the finished copies only. On softens the harsh peaks of trumpets, sopranos and the
         top of an old disc.</td></tr>
-      <tr><td>Turbo</td><td>Restores several recordings at once, for a long list when you are not using the Mac for
+      <tr><td>Turbo</td><td>Restores several recordings at once, for a long list when you are not using the computer for
         anything else. The fan may run, and music playing in another app may stutter. It is off again the next time
         you open the app.</td></tr>
     </table>
+  </div>
+</section>
+
+<!-- Linux: installing, what differs, the command line -->
+<section id="linux">
+  <p class="kicker">Linux</p>
+  <h2>Installing on Linux, and using it from a terminal</h2>
+  <p class="intro">The Linux version is the same window with the same settings and marks. It is free of charge and
+    has no limit on the number of recordings. <a href="./#getit">Download it here</a>.</p>
+  <div class="grid g2" style="margin-top:26px">
+    <div class="card"><h3>Installing and removing</h3><p>Unpack the downloaded file and run <code>./install.sh</code>
+      in its folder. It installs for your user only and asks for no password: Shellac &amp; Vinyl appears in your
+      desktop's menu. <code>./shellac-and-vinyl</code> in the same folder starts it without installing.
+      <code>uninstall.sh</code>, in <code>~/.local/opt/shellac-and-vinyl</code>, removes it again; your list and
+      settings stay in <code>~/.local/share/Shellac &amp; Vinyl/</code> until you delete that folder.</p></div>
+    <div class="card"><h3>What is different from the Mac</h3><p>It reads WAV, FLAC and MP3. Writing MP3 copies needs
+      LAME on your system (<code>libmp3lame0</code> on Debian and Ubuntu); hearing before and after needs PulseAudio
+      or PipeWire, which a desktop has. The Model denoise needs about 4 GB of memory free for a recording (about
+      7 GB on Intel and AMD processors); with less, the recording is restored with Classic and its row says so.</p></div>
+  </div>
+  <div class="card" style="margin-top:20px">
+    <h3>From a terminal</h3>
+    <p>The package includes <code>swingctl</code>: the same restoration without the window, with the same list,
+      settings and verdicts. It is in the package's <code>bin</code> folder, and among your commands after
+      <code>install.sh</code> (when <code>~/.local/bin</code> is on your PATH).</p>
+    <pre><code>swingctl restore side-a.flac side-b.flac --to Restored</code></pre>
+    <p>Recordings and whole folders are queued and restored into the folder after <code>--to</code>, with one line
+      for each as it gets its verdict. <code>--method classical</code> or <code>--method ml</code> chooses the
+      denoise, and <code>--finish</code> writes finished copies too. The command ends with 0 when every recording was
+      restored or left as it is, and with 1 when one could not be restored. <code>swingctl --help</code> lists the
+      rest.</p>
+    <p>Do not run it while the app is open: the two share one list. To control the open app instead, add
+      <code>--attach</code>: <code>swingctl --attach do workshop start</code> presses Start in the window.</p>
   </div>
 </section>
 
@@ -510,19 +543,18 @@
       <summary>A recording got an amber mark. What now?</summary>
       <div><p>The copy is written and may be fine. The row says what to listen for. Press its play key: it starts at that
         part, and Before and After switch between the original and the copy at the same place. Keep the one you
-        prefer. Nothing is lost either way.</p></div>
+        prefer. The original is unchanged either way.</p></div>
     </details>
     <details>
       <summary>A recording was left as it is</summary>
-      <div><p>That is a verdict, not an error: the recording is clean enough, or delicate enough, that taking anything
-        out would cost more than it gives. Nothing is written, and the original is as it was. A red cross with
+      <div><p>That is a verdict, not an error: the recording is clean enough, or delicate enough, that removing anything would do more harm than good. Nothing is written, and the original is as it was. A red cross with
         <b>Not restored</b> is something else: the file could not be read, or the copy could not be written, and the row
         says which.</p></div>
     </details>
     <details>
       <summary>A restored copy is shorter than the original</summary>
-      <div><p>Silence kept at the ends trims the quiet groove before and after the music. The music itself is never cut. Set
-        it to <strong>All</strong> to keep the recording's whole length.</p></div>
+      <div><p>The silence or empty groove before and after the music is trimmed automatically; the music itself is
+        never cut. Set <strong>Silence kept at the ends</strong> to <strong>All</strong> to keep the recording's whole length.</p></div>
     </details>
     <details>
       <summary>The copies do not show up in my music app</summary>
@@ -531,27 +563,28 @@
     </details>
     <details>
       <summary>Music in another app stutters while it works</summary>
-      <div><p>Turn Turbo off. Turbo uses the whole Mac and is meant for when you are not listening to anything.</p></div>
+      <div><p>Turn Turbo off. Turbo uses the whole computer and is meant for when you are not listening to anything.</p></div>
     </details>
     <details>
       <summary>Which files can I add?</summary>
-      <div><p>MP3, M4A and AAC, WAV, AIFF, FLAC, CAF, MP4 and M4B. The copies are 24-bit Apple Lossless (.m4a), or FLAC if you choose it under File type, with the
-        original's tags kept.</p></div>
+      <div><p>On the Mac: MP3, M4A and AAC, WAV, AIFF, FLAC, CAF, MP4 and M4B. The copies are 24-bit Apple Lossless
+        (.m4a), or FLAC if you choose it under File type. On Linux: WAV, FLAC and MP3. A FLAC or a WAV comes back as
+        24-bit FLAC, an MP3 as MP3. The original's tags are kept in every case.</p></div>
     </details>
     <details>
       <summary>Can I undo a restoration?</summary>
-      <div><p>There is nothing to undo: the original was never changed. Delete the restored and finished copies in
-        Finder if you do not want them.</p></div>
+      <div><p>There is nothing to undo: the original was never changed. Delete the restored and finished copies if you do not want them.</p></div>
     </details>
     <details>
       <summary>Does Shellac &amp; Vinyl upload my recordings?</summary>
-      <div><p>No. Everything happens on your Mac and nothing is sent anywhere. See the
+      <div><p>No. Everything happens on your computer and nothing is sent anywhere. See the
         <a href="privacy.html">privacy policy</a>.</p></div>
     </details>
     <details>
       <summary>Something looks wrong. What should I send?</summary>
-      <div><p>Choose <strong>Tools → Show Logs in Finder</strong> and send the folder it opens with your question. It
-        holds the list and a report of numbers for each recording, never any sound.</p></div>
+      <div><p>On the Mac, choose <strong>Tools → Show Logs in Finder</strong> and send the folder it opens with your
+        question. On Linux, send the folder <code>~/.local/share/Shellac &amp; Vinyl/</code>. It holds the list and a
+        report of numbers for each recording, never any sound.</p></div>
     </details>
   </div>
 
@@ -559,11 +592,11 @@
   <div class="table-card" style="max-width:520px">
     <table>
       <tr><th>Keys</th><th>Action</th></tr>
-      <tr><td>⌘O</td><td>Add Files…</td></tr>
+      <tr><td>⌘O</td><td>Add Files… (Mac)</td></tr>
       <tr><td>Space</td><td>Pause and go on, while a recording plays</td></tr>
       <tr><td>Esc</td><td>Stop the recording that plays</td></tr>
-      <tr><td>⌘?</td><td>The manual</td></tr>
-      <tr><td>⌘Q</td><td>Quit</td></tr>
+      <tr><td>⌘?</td><td>The manual (Mac; on Linux, the ? key in the window)</td></tr>
+      <tr><td>⌘Q</td><td>Quit (Mac)</td></tr>
     </table>
   </div>
 </section>
@@ -571,12 +604,13 @@
 <!-- Purchases -->
 <section id="purchases">
   <p class="kicker">Purchases</p>
-  <h2>Try it free, buy it once</h2>
+  <h2>On the Mac: 5 recordings free, then one purchase</h2>
+  <p class="intro">This applies to the Mac version, when it is released. The Linux version is free of charge.</p>
   <div class="price">
     <div><p class="big">5 recordings free</p><p>Your first 5 recordings are free, with everything working; one left as
       it is costs none. The line at the bottom of the window says how many are left. The count is checked when a
       recording starts, never in the middle of one.</p></div>
-    <div><p class="big">One purchase</p><p>After them, one purchase unlocks Shellac &amp; Vinyl for good: one per
+    <div><p class="big">One purchase</p><p>After them, one purchase unlocks Shellac &amp; Vinyl permanently: one per
       Apple ID, for all your Macs. No subscription.</p></div>
     <div><p class="big">A new Mac</p><p>With the same Apple ID it is usually unlocked by itself. If not, click the
       free recordings line at the bottom of the window and choose <em>Restore Purchases</em>. Payments and refunds are
@@ -585,7 +619,7 @@
 </section>
 
 <div class="closing" id="contact">
-  <h2>Still stuck, or something sounds wrong?</h2>
+  <h2>Need help, or does something sound wrong?</h2>
   <p>Write to Christian Melby Bjørn, who makes Shellac &amp; Vinyl. Say which recording it is and what you hear, and
     send the logs folder if you can.</p>
   <div class="buttons">

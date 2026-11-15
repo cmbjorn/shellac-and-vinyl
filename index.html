@@ -439,7 +439,7 @@
     <div><dt>What it is</dt><dd>An app for Mac and Linux that restores recordings of worn records and old tapes.</dd></div>
     <div><dt>What you do</dt><dd>Choose a folder, add your recordings, press Start. There is nothing to set for each recording.</dd></div>
     <div><dt>What you get</dt><dd>A restored copy, as a new file, of each recording it can improve.
-      <small>And a second copy at an even level, if you switch that on.</small></dd></div>
+      <small>With the silence at both ends trimmed. And a second copy at an even level, if you switch that on.</small></dd></div>
     <div><dt>What it leaves alone</dt><dd>Your original files. And any recording it cannot improve without
       harming the music.</dd></div>
     <div><dt>What you need</dt><dd>Your recordings as files, and a Mac with Apple silicon or a Linux desktop.
@@ -481,7 +481,8 @@
       <ul class="checks">
         <li><strong>A long list, left to run.</strong> Add files or whole folders. You can quit at any time: the list continues when you open the app again.</li>
         <li><strong>The computer stays awake.</strong> It is kept from sleeping until the list is done.</li>
-        <li><strong>Silence at the ends, as you choose.</strong> Keep as much of the silence before and after the music as you like. The music itself is never cut.</li>
+        <li><strong>Empty ends trimmed automatically.</strong> The silence or empty groove before and after the music is
+          trimmed, to half a second unless you choose otherwise. The music itself is never cut.</li>
       </ul>
     </div>
   </div>
@@ -527,6 +528,10 @@
       <p><a href="mailto:christianmb@gmail.com?subject=Shellac%20%26%20Vinyl%3A%20the%20beta">Write to me to try the beta</a></p></div>
   </div>
   <p class="road-note"><b>On Linux:</b> a 64-bit Linux desktop with glibc 2.35 or newer (Ubuntu 22.04, Debian 12, Fedora 36, or later). Unpack the file and run <code>./install.sh</code> in it; the README in the package explains the rest. The app is free of charge but not open source; LICENSE.txt in the package has the terms.</p>
+  <p class="road-note"><b>From a terminal:</b> the Linux package includes <code>swingctl</code>, the same restoration
+    without the window, for scripts and long lists:
+    <code>swingctl restore *.flac --to Restored</code>.
+    <a href="support.html#linux">More about the Linux version</a>.</p>
 </section>
 
 <!-- Questions -->
