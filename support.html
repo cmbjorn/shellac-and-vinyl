@@ -421,7 +421,7 @@
   </figure>
   <div class="note" style="margin-top:32px">
     <p><strong>Where the copies are.</strong> Each restored recording is written into your output folder as
-      “name (restored)”, an .m4a file on the Mac and a .flac or .mp3 file on Linux. The silence or empty groove before
+      “name (restored)”, an .m4a file on the Mac (or the File type you chose) and a .flac or .mp3 file on Linux. The silence or empty groove before
       and after the music is trimmed automatically, to half a second unless you change <strong>Silence kept at the
       ends</strong>. With Finished copies on, the finished copies, at an even level, are in a folder called <strong>Finished</strong> beside them. Your originals are where they were, unchanged.</p>
   </div>
@@ -452,12 +452,13 @@
     <h3>Hearing before and after</h3>
     <p>A restored recording has a <strong>play key</strong> at the right of its row. Press it and the restored copy
       plays on your computer, with a bar under the row: <strong>Before</strong> is the original, <strong>After</strong> the
-      restored copy, and <strong>Finished</strong> is there when a finished copy was written. Switching keeps the place,
+      restored copy, <strong>Finished</strong> is there when a finished copy was written, and <strong>Removed</strong> plays
+      what was taken out (Before minus After): it should be clicks, crackle and hiss, not the music. Switching keeps the place,
       so you hear the same bar of music both ways, and Before plays at the copy's loudness, so the difference you hear is what was removed. A recording with an amber mark starts just before the part its reason is about; a green one where
-      the music starts. Click the line to hear another place. Space pauses, Esc stops, and the list continues restoring while you listen.</p>
+      the music starts. Click the line to hear another place. Space pauses, Esc stops, and the list continues restoring while you listen. If you hear music in Removed, or clicks and hiss left in After, press <strong>Restore again</strong> at the right of the bar for <strong>Gentler</strong> or <strong>Stronger</strong>: the recording goes back into the list and its new copy replaces the old one; the original never changes.</p>
   </div>
   <figure class="shot">
-    <img src="images/workshop-listen-restore.jpg" width="760" height="520" loading="lazy" alt="One recording playing, with Before, After and Finished under its row">
+    <img src="images/workshop-listen-restore.jpg" width="760" height="520" loading="lazy" alt="One recording playing, with Before, After, Finished and Removed under its row">
   </figure>
   <div class="grid g2" style="margin-top:28px">
     <div class="card"><h3>Removing recordings from the list</h3><p>Right-click a recording for <strong>Remove from the
@@ -487,6 +488,32 @@
       <tr><td>Denoise</td><td>How the surface noise is reduced. <strong>Auto</strong> chooses the better of two ways
         for each recording, so you do not need to listen to decide. <strong>Classic</strong> or <strong>Model</strong>
         uses that one for every recording; right-click a recording to give it its own.</td></tr>
+      <tr><td>Curve</td><td>The playback curve an old record was cut for. <strong>As Transferred</strong>, the default,
+        leaves the sound as it came, which is right for transfers that are equalized already, such as the Great 78
+        Project's. Choose one of nine 78 and early LP curves to put it on the restored copy, and say under
+        <strong>Transfers</strong> whether you transferred through a phono stage (RIAA) or flat. A file that says what it
+        was equalized with is never equalized twice. Right-click a recording to give it its own curve. On the Mac for now.</td></tr>
+      <tr><td>Drift and wow</td><td>Where the speed drifts through a side, or swings once a turn because the disc's hole
+        is off centre, a sure measurement is shown on the recording's row as a suggestion; right-click it,
+        <strong>Drift and Wow</strong>, <strong>Correct</strong> to even it out, and it is restored again. On the Mac for now.</td></tr>
+      <tr><td>Pitch</td><td>The pitch the speed brings the music to. <strong>Auto</strong>, the default, puts A at 440 Hz
+        where the notes clearly lie outside the bands of the time. Choose 435, 440 or 452 for recordings you know follow
+        it, and right-click a recording to give it its own. Where the speed puts the disc near 80 rpm, the recording's row
+        says it was probably recorded at that speed. On the Mac for now.</td></tr>
+      <tr><td>Hum and buzz</td><td>Where a steady 50 or 60&nbsp;Hz tone (a mains hum, or a buzz with many tones above it)
+        is found in a recording, its row says so as a suggestion; right-click it, <strong>Hum</strong>,
+        <strong>Take Out</strong> to remove it, and it is restored again. <strong>50&nbsp;Hz</strong> and
+        <strong>60&nbsp;Hz</strong> name the pitch yourself. On the Mac for now.</td></tr>
+      <tr><td>Groove walls</td><td>A mono 78 transferred in stereo has the music on both walls of the groove, and both are
+        restored together. Where the walls are in opposite phase (a vertical cut) the copy is made from the difference, and
+        where one wall is far under the other it is left out; the recording's row says which. Right-click it,
+        <strong>Groove Walls</strong>, to choose Both, Left, Right or Vertical yourself, and it is restored again.
+        On the Mac for now.</td></tr>
+      <tr><td>Setup</td><td>First in the settings: <strong>Standard</strong>, <strong>LP</strong> (for records played on
+        a turntable) or <strong>Archive Flat</strong> (restored and nothing more) give the settings their values in one
+        press (Finished copies stay as you have them; Archive Flat turns them off), and the choice says
+        <strong>Custom</strong> when you have changed one yourself. Recordings already restored
+        keep their copies. On the Mac for now.</td></tr>
       <tr><td>Finished copies</td><td>Off from the start. On: each restored recording also gets a second copy in the
         Finished folder, at an even, comfortable level. It takes twice the disk space and a little
         longer. The restored copy is written either way, and is never leveled.</td></tr>
@@ -494,6 +521,10 @@
         the difference between loud and quiet recordings, a high number evens them out.</td></tr>
       <tr><td>Tame harshness</td><td>For the finished copies only. On softens the harsh peaks of trumpets, sopranos and the
         top of an old disc.</td></tr>
+      <tr><td>Settings for finished copies</td><td>The <strong>Settings…</strong> key beside Finished copies opens the
+        target loudness, the ceiling for the peaks, the compressor's ratio, threshold and speed, and a nine-band Graphic
+        EQ, each within its limits. <strong>Reset</strong> puts everything back to the usual copy, which is also what
+        you get when nothing is set. A recording that has started keeps what it started with. On the Mac for now.</td></tr>
       <tr><td>Turbo</td><td>Restores several recordings at once, for a long list when you are not using the computer for
         anything else. The fan may run, and music playing in another app may stutter. It is off again the next time
         you open the app.</td></tr>
@@ -568,7 +599,8 @@
     <details>
       <summary>Which files can I add?</summary>
       <div><p>On the Mac: MP3, M4A and AAC, WAV, AIFF, FLAC, CAF, MP4 and M4B. The copies are 24-bit Apple Lossless
-        (.m4a), or FLAC if you choose it under File type. On Linux: WAV, FLAC and MP3. A FLAC or a WAV comes back as
+        (.m4a), or FLAC, WAV, AIFF or MP3 if you choose one under File type; Sample rate there sets the copies' rate
+        (As the Original by default; an MP3 holds 44.1 and 48 kHz). On Linux: WAV, FLAC and MP3. A FLAC or a WAV comes back as
         24-bit FLAC, an MP3 as MP3. The original's tags are kept in every case.</p></div>
     </details>
     <details>
@@ -632,7 +664,7 @@
 
 <footer class="site">
   <div class="wrap">
-    <div class="links"><a href="./">Shellac &amp; Vinyl</a><a href="privacy.html">Privacy policy</a><a href="mailto:christianmb@gmail.com">Contact</a></div>
+    <div class="links"><a href="./">Shellac &amp; Vinyl</a><a href="privacy.html">Privacy policy</a><a href="lame.html">LAME source</a><a href="mailto:christianmb@gmail.com">Contact</a></div>
     <p>© 2026 Christian Melby Bjørn.</p>
   </div>
 </footer>
