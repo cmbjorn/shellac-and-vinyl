@@ -410,14 +410,14 @@
     <div class="card"><h3>Choose the output folder</h3><p>Press the folder button at the top of the window and choose
       where the restored copies should go. Do this before you press Start.</p></div>
     <div class="card"><h3>Add your recordings</h3><p>Press <strong>Add Files…</strong> (⌘O on the Mac) and select files or whole
-      folders, or drop them on the window. A folder brings every recording inside it, subfolders included.</p></div>
+      folders, or drop them on the window. A folder brings every recording inside it, subfolders included. On the Mac you can also drop them on the app's icon in the Dock, or choose Open With in the Finder.</p></div>
     <div class="card"><h3>Press Start</h3><p>The recordings are restored one after the other. You can add more while
       it works. The line at the bottom says what is happening and about how long is left.</p></div>
   </div>
   <figure class="shot">
-    <img src="images/workshop-restore.jpg" width="760" height="520" alt="The Shellac & Vinyl window with the settings at the top and the list of recordings below">
+    <img src="images/workshop-restore.jpg" width="760" height="449" alt="The Shellac &amp; Vinyl window with the settings at the top and the list of recordings below">
     <figcaption>The settings are at the top (here with Finished copies turned on), the list of recordings below, and the
-      status line at the bottom.</figcaption>
+      status line at the bottom. Each row says what was done to that recording, such as a corrected speed.</figcaption>
   </figure>
   <div class="note" style="margin-top:32px">
     <p><strong>Where the copies are.</strong> Each restored recording is written into your output folder as
@@ -455,10 +455,21 @@
       restored copy, <strong>Finished</strong> is there when a finished copy was written, and <strong>Removed</strong> plays
       what was taken out (Before minus After): it should be clicks, crackle and hiss, not the music. Switching keeps the place,
       so you hear the same bar of music both ways, and Before plays at the copy's loudness, so the difference you hear is what was removed. A recording with an amber mark starts just before the part its reason is about; a green one where
-      the music starts. Click the line to hear another place. Space pauses, Esc stops, and the list continues restoring while you listen. If you hear music in Removed, or clicks and hiss left in After, press <strong>Restore again</strong> at the right of the bar for <strong>Gentler</strong> or <strong>Stronger</strong>: the recording goes back into the list and its new copy replaces the old one; the original never changes.</p>
+      the music starts. Click the line to hear another place. Space pauses, Esc stops, and the list continues restoring while you listen. If you hear music in Removed, or clicks and hiss left in After, press <strong>Restore again</strong> at the right of the bar for <strong>Gentler</strong> or <strong>Stronger</strong>: the recording goes back into the list and its new copy replaces the old one; the original never changes. Right-click the row, then <strong>Strength</strong>, for the same.</p>
   </div>
   <figure class="shot">
-    <img src="images/workshop-listen-restore.jpg" width="760" height="520" loading="lazy" alt="One recording playing, with Before, After, Finished and Removed under its row">
+    <img src="images/workshop-listen-restore.jpg" width="760" height="449" loading="lazy" alt="One recording playing, with Before, After, Finished and Removed under its row">
+  </figure>
+  <div class="card" style="margin-top:28px">
+    <h3>Seeing what was taken out</h3>
+    <p>The <strong>spectrum key</strong> on a restored row (the waveform with a magnifying glass, beside the play key)
+      shows the recording before and after. <strong>Spectrum</strong> draws the two over each other, so you see where the
+      hiss and the surface came down and that the music stayed where it was; the line under it gives the average change
+      in a few bands. <strong>Spectrogram</strong> shows the whole recording over time; click it to hear that place.
+      On the Mac for now.</p>
+  </div>
+  <figure class="shot">
+    <img src="images/workshop-spectrum-restore.jpg" width="760" height="460" loading="lazy" alt="The spectrum of one recording before and after: the music the same, the hiss above 4 kHz lower">
   </figure>
   <div class="grid g2" style="margin-top:28px">
     <div class="card"><h3>Removing recordings from the list</h3><p>Right-click a recording for <strong>Remove from the
@@ -485,6 +496,11 @@
       <tr><td>Silence kept at the ends</td><td>The silence or empty groove before and after the music is trimmed automatically.
         This sets how much each copy keeps: half a second unless you change it, from None to 5 seconds, or All for the recording's whole length. The music
         itself is never cut.</td></tr>
+      <tr><td>File type</td><td>The kind of file the copies are written as. <strong>ALAC</strong> (Apple Lossless, .m4a),
+        the default, and <strong>FLAC</strong> keep every detail and the original's tags; <strong>WAV</strong> and
+        <strong>AIFF</strong> do too, uncompressed; <strong>MP3</strong> is far smaller, for listening copies more than for
+        keeping. <strong>Sample rate</strong>, in the same menu, keeps each original's rate (As the Original) or writes
+        them all at one, from 44.1 to 192&nbsp;kHz. On Linux the copies are FLAC or MP3.</td></tr>
       <tr><td>Denoise</td><td>How the surface noise is reduced. <strong>Auto</strong> chooses the better of two ways
         for each recording, so you do not need to listen to decide. <strong>Classic</strong> or <strong>Model</strong>
         uses that one for every recording; right-click a recording to give it its own.</td></tr>
@@ -496,6 +512,12 @@
       <tr><td>Drift and wow</td><td>Where the speed drifts through a side, or swings once a turn because the disc's hole
         is off centre, a sure measurement is shown on the recording's row as a suggestion; right-click it,
         <strong>Drift and Wow</strong>, <strong>Correct</strong> to even it out, and it is restored again. On the Mac for now.</td></tr>
+      <tr><td>Speed</td><td>Many 78s were transferred at the wrong speed, so they sound a little too low and too slow, or
+        too high and too fast. Shellac &amp; Vinyl measures the pitch of the notes. <strong>Sure</strong>, the default,
+        writes the copy at the right speed where the notes agree clearly, and the row says so (speed +1.8&nbsp;%); where
+        they only partly agree, the row suggests it with a question mark and the speed is left alone. <strong>All</strong>
+        corrects every suggestion, <strong>Off</strong> none. Right-click a recording, <strong>Speed</strong>, to choose for
+        that one. On the Mac for now.</td></tr>
       <tr><td>Pitch</td><td>The pitch the speed brings the music to. <strong>Auto</strong>, the default, puts A at 440 Hz
         where the notes clearly lie outside the bands of the time. Choose 435, 440 or 452 for recordings you know follow
         it, and right-click a recording to give it its own. Where the speed puts the disc near 80 rpm, the recording's row
