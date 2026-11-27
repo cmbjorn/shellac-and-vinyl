@@ -452,7 +452,7 @@
   <div class="card" style="margin-top:28px">
     <h3>Hearing before and after</h3>
     <p>A restored recording has a <strong>play key</strong> at the right of its row. Press it and the restored copy
-      plays on your computer, with a bar under the row (click the recording's title to open the bar without playing): <strong>Before</strong> is the original, <strong>After</strong> the
+      plays on your computer, with a bar under the row (on the Mac, click the recording's title to open the bar without playing): <strong>Before</strong> is the original, <strong>After</strong> the
       restored copy, <strong>Leveled</strong> is there when a leveled copy was written, and <strong>Removed</strong> plays
       what was taken out (Before minus After): it should be clicks, crackle and hiss, not the music. Switching keeps the place,
       so you hear the same bar of music both ways, and Before plays at the copy's loudness, so the difference you hear is what was removed. A recording with an amber mark starts just before the part its reason is about; a green one where
@@ -466,8 +466,7 @@
     <p>The <strong>spectrum key</strong> on a restored row (the waveform with a magnifying glass, beside the play key)
       shows the recording before and after. <strong>Spectrum</strong> draws the two over each other, so you see where the
       hiss and the surface came down and that the music stayed where it was; the line under it gives the average change
-      in a few bands. <strong>Spectrogram</strong> shows the whole recording over time; click it to hear that place.
-      On the Mac for now.</p>
+      in a few bands. <strong>Spectrogram</strong> shows the whole recording over time; click it to hear that place.</p>
   </div>
   <figure class="shot">
     <img src="images/workshop-spectrum-restore.jpg" width="760" height="460" loading="lazy" alt="The spectrum of one recording before and after: the music the same, the hiss above 4 kHz lower">
@@ -509,29 +508,28 @@
         leaves the sound as it came, which is right for transfers that are equalized already, such as the Great 78
         Project's. Choose one of nine 78 and early LP curves to put it on the restored copy, and say under
         <strong>Transfers</strong> whether you transferred through a phono stage (RIAA) or flat. A file that says what it
-        was equalized with is never equalized twice. Right-click a recording to give it its own curve. On the Mac for now.</td></tr>
+        was equalized with is never equalized twice. Right-click a recording to give it its own curve.</td></tr>
       <tr><td>Drift and wow</td><td>Where the speed drifts through a side, or swings once a turn because the disc's hole
         is off centre, a sure measurement is shown on the recording's row as a suggestion; right-click it,
-        <strong>Drift and Wow</strong>, <strong>Correct</strong> to even it out, and it is restored again. On the Mac for now.</td></tr>
+        <strong>Drift and Wow</strong>, <strong>Correct</strong> to even it out, and it is restored again.</td></tr>
       <tr><td>Speed</td><td>Many 78s were transferred at the wrong speed, so they sound a little too low and too slow, or
         too high and too fast. Shellac &amp; Vinyl measures the pitch of the notes. <strong>Sure</strong>, the default,
         writes the copy at the right speed where the notes agree clearly, and the row says so (speed +1.8&nbsp;%); where
         they only partly agree, the row suggests it with a question mark and the speed is left alone. <strong>All</strong>
         corrects every suggestion, <strong>Off</strong> none. Right-click a recording, <strong>Speed</strong>, to choose for
-        that one. On the Mac for now.</td></tr>
+        that one.</td></tr>
       <tr><td>Pitch</td><td>The pitch the speed brings the music to. <strong>Auto</strong>, the default, puts A at 440 Hz
         where the notes clearly lie outside the bands of the time. Choose 435, 440 or 452 for recordings you know follow
         it, and right-click a recording to give it its own. Where the speed puts the disc near 80 rpm, the recording's row
-        says it was probably recorded at that speed. On the Mac for now.</td></tr>
+        says it was probably recorded at that speed.</td></tr>
       <tr><td>Hum and buzz</td><td>Where a steady 50 or 60&nbsp;Hz tone (a mains hum, or a buzz with many tones above it)
         is found in a recording, its row says so as a suggestion; right-click it, <strong>Hum</strong>,
         <strong>Take Out</strong> to remove it, and it is restored again. <strong>50&nbsp;Hz</strong> and
-        <strong>60&nbsp;Hz</strong> name the pitch yourself. On the Mac for now.</td></tr>
+        <strong>60&nbsp;Hz</strong> name the pitch yourself.</td></tr>
       <tr><td>Groove walls</td><td>A mono 78 transferred in stereo has the music on both walls of the groove, and both are
         restored together. Where the walls are in opposite phase (a vertical cut) the copy is made from the difference, and
         where one wall is far under the other it is left out; the recording's row says which. Right-click it,
-        <strong>Groove Walls</strong>, to choose Both, Left, Right or Vertical yourself, and it is restored again.
-        On the Mac for now.</td></tr>
+        <strong>Groove Walls</strong>, to choose Both, Left, Right or Vertical yourself, and it is restored again.</td></tr>
       <tr><td>Setup</td><td>First in the settings: <strong>Standard</strong>, <strong>LP</strong> (for records played on
         a turntable) or <strong>Archive Flat</strong> (restored and nothing more) give the settings their values in one
         press (Leveled copies stay as you have them; Archive Flat turns them off), and the choice says
@@ -559,15 +557,16 @@
 <section id="linux">
   <p class="kicker">Linux</p>
   <h2>Installing on Linux, and using it from a terminal</h2>
-  <p class="intro">The Linux version is the same window with the same settings and marks. It is free of charge and
-    has no limit on the number of recordings. <a href="./#getit">Download it here</a>.</p>
+  <p class="intro">The Linux version is the same window and the same restoration, with the same marks. It is free of
+    charge and has no limit on the number of recordings. <a href="./#getit">Download it here</a>.</p>
   <div class="grid g2" style="margin-top:26px">
     <div class="card"><h3>Installing and removing</h3><p>Unpack the downloaded file and run <code>./install.sh</code>
       in its folder. It installs for your user only and asks for no password: Shellac &amp; Vinyl appears in your
       desktop's menu. <code>./shellac-and-vinyl</code> in the same folder starts it without installing.
       <code>uninstall.sh</code>, in <code>~/.local/opt/shellac-and-vinyl</code>, removes it again; your list and
       settings stay in <code>~/.local/share/Shellac &amp; Vinyl/</code> until you delete that folder.</p></div>
-    <div class="card"><h3>What is different from the Mac</h3><p>It reads WAV, FLAC and MP3. Writing MP3 copies needs
+    <div class="card"><h3>What is different from the Mac</h3><p>It reads WAV, FLAC and MP3, and writes FLAC, or MP3 for an MP3. Three settings are the Mac's
+      alone for now: Setup, File type with Sample rate, and the Settings… for leveled copies. Writing MP3 copies needs
       LAME on your system (<code>libmp3lame0</code> on Debian and Ubuntu); hearing before and after needs PulseAudio
       or PipeWire, which a desktop has. The Model denoise needs about 4 GB of memory free for a recording (about
       7 GB on Intel and AMD processors); with less, the recording is restored with Classic and its row says so.</p></div>
@@ -580,7 +579,7 @@
     <pre><code>swingctl restore side-a.flac side-b.flac --to Restored</code></pre>
     <p>Recordings and whole folders are queued and restored into the folder after <code>--to</code>, with one line
       for each as it gets its verdict. <code>--method classical</code> or <code>--method ml</code> chooses the
-      denoise, and <code>--finish</code> writes leveled copies too (in a folder <em>Finished</em>). The command ends with 0 when every recording was
+      denoise, and <code>--finish</code> writes leveled copies too (in a folder <em>Leveled</em>). The command ends with 0 when every recording was
       restored or left as it is, and with 1 when one could not be restored. <code>swingctl --help</code> lists the
       rest.</p>
     <p>Do not run it while the app is open: the two share one list. To control the open app instead, add
